@@ -43,7 +43,7 @@
     </footer>
 
     <!-- Template for one single entry in bird list (.bird-gallery .bird-list) -->
-    <template id="bird-list-entry">
+    <script type="text/template" id="bird-list-entry">
         <li class="bird-list-entry" bird-id="<%= id %>">
             <img src="<%= imagePath %>" class="bird-image" />
             <div class="bird-description">
@@ -54,10 +54,10 @@
                 <i class="icon-plus-circled" aria-hidden="true"></i>
             </span>
         </li>
-    </template>
+    </script>
 
     <!-- Template for one single entry on counting board (.bird-counter .bird-list) -->
-    <template id="bird-counter-entry">
+    <script type="text/template" id="bird-counter-entry">
         <li class="bird-list-entry" bird-id="<%= id %>">
             <img src="<%= imagePath %>" class="bird-image" />
             <div class="bird-interface">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </li>
-    </template>
+    </script>
 
     <!-- JSON-formatierte Liste der Vögel für diese App -->
     <template id="bird-list">
@@ -93,8 +93,7 @@
         "audioPath":"resources/data/audio/mehlschwalbe.ogg" },{ "id":9, "name":"Mauersegler", "latinName":"Apus apus",
         "imagePath":"resources/data/images/mauersegler.png", "audioPath":"resources/data/audio/mauersegler.ogg" },{ "id":10,
         "name":"Buchfink", "latinName":"Fringilla coelebs", "imagePath":"resources/data/images/buchfink.png",
-        "audioPath":"resources/data/audio/buchfink.ogg" },{ "id":11, "name":"Ringeltaube", "latinName":"Columba
-        palumbus", "imagePath":"resources/data/images/ringeltaube.png", "audioPath":"resources/data/audio/ringeltaube.ogg"
+        "audioPath":"resources/data/audio/buchfink.ogg" },{ "id":11, "name":"Ringeltaube", "latinName":"Columba palumbus", "imagePath":"resources/data/images/ringeltaube.png", "audioPath":"resources/data/audio/ringeltaube.ogg"
         },{ "id":12, "name":"Feldsperling", "latinName":"Passer montanus",
         "imagePath":"resources/data/images/feldsperling.png", "audioPath":"resources/data/audio/feldsperling.ogg" },{
         "id":13, "name":"Türkentaube", "latinName":"Streptopelia decaocto",
@@ -105,7 +104,6 @@
         "audioPath":"resources/data/audio/rotkehlchen.ogg"}]
     </template>
 
-    <script type="module" src="vendors/underscore/underscore.js"></script>
     <script type="module" src="resources/js/index.js"></script>
 </body>
 
