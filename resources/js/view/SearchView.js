@@ -8,6 +8,9 @@ function onQueryChanged(event) {
     this.notifyAll(new QueryEvent(query));
 }
 
+/**
+ * Event to be fired when user changes the search box input value
+ */
 class QueryEvent extends Event {
     
     constructor(query) {
@@ -16,6 +19,9 @@ class QueryEvent extends Event {
 
 }
 
+/**
+ * Represents the search input field and informs connected listeners when users change the input value
+ */
 class SearchView extends View {
 
     constructor(el) {
